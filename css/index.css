@@ -1,0 +1,446 @@
+div, p {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+.wrap a {
+    text-decoration: none;
+    color: black;
+}
+
+.head {
+    padding: 30px 0 10px;
+    position: relative;
+    background-color: white;
+}
+
+.head .head-top {
+    height: 34px;
+    padding-bottom: 36px;
+    position: relative;
+    font-size: 12px;
+}
+
+.fl {
+    float: left;
+}
+
+
+.fr {
+    float: right;
+}
+
+.search-box {
+    background: #fafafa;
+    border-radius: 2px;
+    margin-left: 227px;
+    width: 340px;
+    height: 34px;
+}
+
+.search-box .search-text {
+    border: 1px solid #e0e0e0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    height: 32px;
+    line-height: 32px;
+    width: 283px;
+    border-right: 0 none;
+    padding-left: 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333;
+    outline: none;
+}
+
+.search-box .search-btn {
+    width: 40px;
+    height: 36px;
+    background: url(../static/search.png) no-repeat center center #d32f2f;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-indent: -9999px;
+}
+
+.right-wrap-login {
+    position: absolute;
+    right: 0px;
+}
+
+.unlogin {
+    margin-top: 12px;
+}
+
+.unlogin div {
+    margin-left: 20px;
+}
+
+.nav {
+    height: 30px;
+    border-bottom: 2px solid #ededed;
+}
+
+.nav a {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.nav a.active, .nav a:hover {
+    color: #d32f2f;
+}
+
+.menu-left a {
+    margin-right: 250px;
+}
+
+.menu-right a {
+    margin-right: 70px;
+}
+
+.nav a em {
+    display: block;
+    height: 4px;
+    margin: 4px auto 0;
+    background: #fff;
+    width: 60%;
+}
+
+.nav a.active em, .nav a.current em, .nav a:hover em {
+    background: #d32f2f;
+}
+
+.logined .username {
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.logined .shelf {
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.logined .history {
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.logined .exit {
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.float-mark {
+    width: 275px;
+    height: auto;
+    padding: 15px 25px;
+    left: -210px;
+    text-align: left;
+    z-index: 20;
+    position: absolute;
+    top: 39px;
+    background: rgba(250, 250, 250, .98);
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.ud_hasHistory .list {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shelf span:hover, .history span:hover, .exit:hover, .shelf ul:hover, .history ul:hover {
+    color: #d32f2f;
+}
+
+.book-types {
+    width: 236px;
+}
+
+.book-types .category {
+    width: 234px;
+    height: auto;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+}
+
+.book-types .category .title {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 700;
+    line-height: 52px;
+    padding-left: 21px;
+    background: #f2f2f2;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.category .cate-list li {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.category .cate-list li a {
+    display: inline-block;
+    margin-left: 27px;
+    margin-right: 27px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.book-rank {
+    background-color: white;
+}
+
+.book-recommendation {
+    width: 718px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.book-recommendation .mid-news {
+    padding: 17px 7px 14px 21px;
+    border: 1px solid #f0f0f0;
+    height: 171px;
+}
+
+.mid-news-left {
+    margin-right: 14px;
+}
+
+.news-lists li {
+    width: 330px;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tab-lists {
+    padding: 15px 17px 10px;
+    border: 1px solid #f0f0f0;
+    width: 200px;
+}
+
+.tab-lists .top-title .title {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+.tab-lists .top-title {
+    line-height: 20px;
+    height: 20px;
+    width: 200px;
+}
+
+.tab-lists li {
+    line-height: 32px;
+    border-bottom: 1px dotted #ccc;
+    font-size: 14px;
+    height: 28.4px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.lists li .list_icon {
+    width: 17px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    display: inline-block;
+    color: #a9aeb7;
+    margin: 8px 9px 0 0;
+    overflow: hidden;
+}
+
+.dotline {
+    border-bottom: 1px dotted #ccc;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.store_list_wrap {
+    border: 1px solid #e6e6e6;
+    padding: 0 20px 20px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.bookbox {
+    width: 558px;
+    height: 135px;
+    padding: 20px 0;
+}
+
+.bookbox .bookimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.bookbox .bookimg {
+    width: 100px;
+    height: 132px;
+    float: left;
+    margin-right: 20px;
+}
+
+.bookbox .bookinfo {
+    width: 380px;
+    overflow: hidden;
+    height: 130px;
+}
+
+.bookbox .bookname, .bookbox .bookname a {
+    font-size: 20px;
+    color: #333;
+    line-height: 26px;
+}
+
+.bookbox .bookintro {
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+    max-height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+.bookbox .btn {
+    width: auto;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.pagebox {
+    line-height: 33px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.pagebox .pagebar {
+    color: #999;
+}
+
+.pagebar input.scrollpage, .pagebox_submit, .author .btn {
+    width: 40px;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    background-color: #fff;
+    padding: 0;
+    color: #999;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.author .title input, .author .type input {
+    border: 1px solid #e0e0e0;
+    height: 30px;
+    outline: none;
+    font-size: 24px;
+}
+
+.author .description textarea {
+    font-size: 24px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.author .content textarea {
+    font-size: 24px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    width: 100%;
+    height: 450px;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.admin_list_wrap {
+    border: 1px solid #e6e6e6;
+    padding: 0 20px 20px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.bookoperatre, .bookbox .collect {
+    float: right;
+    height: auto;
+    width: auto;
+    margin-top: 70px;
+}
+
+.bookoperatre .btn {
+    width: auto;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 8px;
+    vertical-align: middle;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>小说</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body onload="load_head();load_author();">
+    <div class="wrap">
+        <div class="head" id="login_ctrl">
+            <div class="head-top">
+                <div class="fl">
+                    <img src="static/default.png" alt="logo"></a>
+                </div>
+                <div class="search-box fl" data-hook="searchSuggest">
+                    <input type="text" class="search-text fl" name="keyword" autocomplete="off" disableautocomplete
+                        v-model="key" />
+                    <input type="submit" class="search-btn fr" v-on:click="search()" />
+                </div>
+
+                <div class="right-wrap-login">
+                    <div class="unlogin" v-show="!is_login">
+                        <div class="login fl"><a class="user_login" href="login.html">登录</a></div>
+                        <div class="regist fl"><a class="user_register" href="register.html">注册</a></div>
+                    </div>
+                    <div class="logined" v-show="is_login">
+                        <div class="username">
+                            {{username}}
+                        </div>
+
+                        <div class="shelf">
+                            <span v-on:click="switch_shelf();">书架</span>
+                            <div class="float-mark" v-show="show_shelf">
+                                <div class="ud_noHistory" v-show="!shelf.length">
+                                    <h2>暂无记录</h2>
+                                </div>
+                                <div class="ud_hasHistory" v-show="shelf.length">
+                                    <ul class="list" v-for="book in shelf"> {{book.name}} </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history">
+                            <span v-on:click="switch_history();">历史</span>
+                            <div class="float-mark" v-show="show_history">
+                                <div class="ud_noHistory" v-show="!history.length">
+                                    <h2>暂无记录</h2>
+                                </div>
+                                <div class="ud_hasHistory" v-show="history.length">
+                                    <ul class="list" v-for="book in history"> {{book.name}} </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exit">
+                            <a href="退出登录的链接" class="log-out">退出</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="nav">
+                <div class="menu-left fl">
+                    <a href="index.html">首页<em></em></a>
+                    <a class="active" href="store.html">书库<em></em></a>
+                </div>
+                <div class="menu-right fr">
+                    <a href="author.html" class="author-zone">作者专区<em></em></a>
+                </div>
+            </div>
+        </div>
+        <div class="author" id="author">
+            <div class="title">
+                <p>标题:</p><input type="text" name="title" v-model="title">
+            </div>
+            <div class="type">
+                <p>类型:</p><input type="text" name="type" v-model="type">
+            </div>
+            <div class="description">
+                <p>简介:</p><textarea type="text" name="description" v-model="description"></textarea>
+            </div>
+            <div class="content">
+                <p>内容:</p><textarea type="text" name="content" v-model="content"></textarea>
+            </div>
+            <input type="button" class="btn" value="提交" style="margin: 0;" v-on:click="submit">
+
+        </div>
+    </div>
+</body>
+
+</html>

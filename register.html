@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body class="wrap">
+
+    <div class="pass_header">
+        <div class="pass_logo">
+            <a href="index.html"><img src="static/default.png"></a>
+        </div>
+        <div class="pass_link">
+            已有账号 <a href="login.html">登录</a>
+        </div>
+    </div>
+
+    <div class="passbg">
+        <div class="login-box">
+            <p class="welcome">注册</p>
+
+            <p>
+                <input type="text" name="username" placeholder="请输入账号" id="username" class="login-text" maxlength="30">
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="请输入密码" id="password" class="login-text"
+                    maxlength="16">
+            </p>
+            <p style="color: red;" id="message"> </p>
+            <input type="submit" id="submit_user" class="btn-submit" value="注册" onclick="register();">
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
